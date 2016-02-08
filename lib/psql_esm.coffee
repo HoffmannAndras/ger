@@ -167,8 +167,8 @@ class PSQLEventStoreManager
     .orderByRaw("action_count DESC")
 
     @_knex(one_degree_away.as('x'))
-    .where('x.last_expires_at', '>', options.expires_after)
-    .where('x.last_actioned_at', '<=', options.current_datetime)
+#    .where('x.last_expires_at', '>', options.expires_after)
+#    .where('x.last_actioned_at', '<=', options.current_datetime)
     .orderByRaw("x.action_count DESC")
     .limit(options.neighbourhood_size)
     .then( (rows) ->
