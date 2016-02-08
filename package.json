@@ -1,5 +1,5 @@
 {
-    "name": "ger",
+    "name": "ger-fix",
     "description": "Good Enough Recommendations (GER) is a collaborative filtering based recommendations engine built to be easy to use and integrate into your application.",
     "url": "https://github.com/grahamjenson/ger.git",
     "keywords": [
